@@ -36,7 +36,7 @@ public class UniqueCharacters {
 	}
 	
 	
-	//compare every character to every other character
+	//compare every character to every other character sorted.
 	public static boolean hasUniqueChars2(String testString) {
 		boolean isUnique = false;
 		
