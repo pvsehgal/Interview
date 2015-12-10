@@ -1,4 +1,4 @@
-package com.sehgal.interview;
+package com.interview;
 
 public class FindKthElement {
 
@@ -88,12 +88,6 @@ public class FindKthElement {
 		if(k == iWrapper.value){
 			System.out.println("Returning: " + head.getData());
 			return head;
-		}
-		
-		if(aNode == null){
-			System.out.println("Returning: null");
-		} else {
-			System.out.println("Returning: " + aNode.getData());
 		}
 		
 		return aNode;

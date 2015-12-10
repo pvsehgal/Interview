@@ -1,9 +1,10 @@
-package com.sehgal.interview;
+package com.interview;
 
 public class Node {
 	
 	private char data;
 	private Node next = null;
+	private Node previous = null;
 	
 	public Node(char data){
 		this.data = data;
@@ -19,6 +20,14 @@ public class Node {
 	
 	public Node getNext() {
 		return next;
+	}
+	
+	public Node getPrevious() {
+		return previous;
+	}
+	
+	public void setPrevious(Node n) {
+		previous = n;
 	}
 
 }

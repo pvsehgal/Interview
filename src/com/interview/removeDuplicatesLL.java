@@ -1,4 +1,4 @@
-package com.sehgal.interview;
+package com.interview;
 
 public class removeDuplicatesLL {
 
