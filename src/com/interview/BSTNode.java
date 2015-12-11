@@ -33,7 +33,7 @@ public class BSTNode {
 		
 		
 		System.out.println("Height: " + getHeight(headNode));
-		
+		System.out.println("Count: " + noOfNodes(headNode));
 		
 	}
 	
@@ -102,6 +102,26 @@ public class BSTNode {
 		
 		return (rightHeight > leftHeight) ? rightHeight : leftHeight;
 	}
+	
+	public static int noOfNodes(BSTNode head){
+		return getRecursiveNoOfNodes(head, 1);
+	}
+	
+	private static int getRecursiveNoOfNodes(BSTNode node, int count){
+		System.out.println("getRecursiveNoOfNodes("+ node.getData() + ", " + count +")");
+		if(node.hasLeftNode()){
+			count++;
+			count = getRecursiveNoOfNodes(node.getLeftNode(), count);
+		}
+		
+		if(node.hasrightNode()){
+			count++;
+			count = getRecursiveNoOfNodes(node.getRightNode(), count);
+		}
+		
+		return count;
+	}
+	
 	
     
 	
